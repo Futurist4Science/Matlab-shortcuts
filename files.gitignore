@@ -1,0 +1,4 @@
+$ cat .gitignore
+# Add files/patterns for git to ignore below
+
+# Add code and files/patterns for git to explicitly include below
