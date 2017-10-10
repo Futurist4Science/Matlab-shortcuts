@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FAVORITESROOT version="2">
+   
+   
+   
+   <title>My Shortcuts</title>
+   
+   
+   
+   <FAVORITECATEGORY>
+      
+      
+      
+      <name>Help Browser Favorites</name>
+   
+   
+   
+   </FAVORITECATEGORY>
+
+   
+   
+   <FAVORITE>
+      
+      
+      <label>Diary ON</label>
+      
+      
+      <icon>Standard icon</icon>
+      
+      
+      <callback>% Turn On Diary Logging
+diary off 
+% first turn off diary, so as not to log this script
+diary_filename=['CommandWindowLog',datestr(now,30)];
+% setup temp variable with filename + timestamp, echo off
+set(0,'DiaryFile',diary_filename)
+% set the objectproperty DiaryFile of hObject 0 to the temp variable filename
+% Note: this must be done in this manner as &gt;&gt;diary(filename) will not pass
+% variables for the timestamp to work as of Matlab R2014b (maybe never fixed?)
+clear diary_filename
+% clean up temp variable
+diary on
+% turn on diary logging</callback>
+      
+      
+      <editable>true</editable>
+   
+   
+   </FAVORITE>
+
+
+</FAVORITESROOT>
